@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Avatar</th>
+        <th scope="col">nombre completo</th>
+        <th scope="col">email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <th scope="row">{{usuario.id}}</th>
+        <td><img src="{{usuario.avatar}}" alt=""></td>
+        <td>{{usuario.fullName}}</td>
+        <td>{{usuario.email}}</td>
+      </tr>
+    </tbody>
+  </table>
